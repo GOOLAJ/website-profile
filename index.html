@@ -117,17 +117,24 @@
       left: 55%;
     }
     .flex-container {
-            background-color: white;
+
             width: 400px;
             height: 400px;
-            color: black;
+            color: white;
             border-radius: 30px;
             text-align: center;
+            position: relative;
+            margin: auto;
     }
     .flex-box {
-      text-align: justify;
-      line-height: 2;
-      text-indent: 50px;
+        display: flex;
+        
+    }
+    .container h2{
+      font-size: 60px;
+    }
+    .container p{
+      font-size: 20px ;
     }
   </style>
 </head>
@@ -152,7 +159,7 @@
           alt="" width="500">
       </div>
       <div class="title">
-        <h2>Hello, its me</h3>
+        <h2 style="font-size: 20px;">Hello, its me</h3>
           <strong style="font-size: 80px;">Dominic</strong>
       </div>
      
@@ -165,7 +172,7 @@
     <div class="container">
       <!--Add info about-->
       <div class="flex-container">
-        <h2 style="font-size: 50px;">ABOUT</h2>
+        <h2>ABOUT</h2>
         <div class="flex-box">
       <p>My Name is Dominic P. Olasiman, I am 21 years of age and I in Barangay Hamorawon Calbayog City
         and I have a saying that Simplify your life cause the simplier your life gets, the more you acknowledge 
@@ -179,17 +186,14 @@
   <section id="section3" class="section">
     <div class="container">
       <div class="flex-container">
-      <h2 style="font-size: 50px;">EDUCATION</h2>
-      <div class="flex-box">
+      <h2>EDUCATION</h2>
       <!--Add info about Education-->
       <p>I'm a Student at Northwest Samar State University,
         currently enrolled in the program of Bachelor's of Science in Information Technology. <br>
-        <br>
         I am an elementary Graduate from Calbayog East Central School and
         also a product of Calbayog City National HighSchool which was the HighSchool
         that I graduated from.
       </p>
-    </div>
     </div>
     </div>
   </section>
@@ -198,26 +202,23 @@
     <div class="container">
       <!--Add info about Skills-->
       <div class="flex-container">
-      <h2 style="font-size: 35px;">SKILLS</h2>
+      <h2>SKILLS</h2>
       <p>I'm still on the process of honing my skills to get better everyday.</p>
-      <div>
-      <div style="text-align: left;"><b>Technical Skills</b> <br>
+      <div style="font-size: 30px;"> Soft Skills
+          <p>Good communication Skills</p>
+          <p>Ability to work in a team</p>
+          <p>Quick Learner</p>
+          <p>Resourceful</p>
       </div>
-          Experienced with:
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-      </div>
-      <div style="text-align: left;"><b> Soft Skills</b>
-        </div>
-          <li>Good communication Skills</li>
-          <li>Ability to work in a team</li>
-          <li>Quick Learner</li>
-          <li>Resourceful</li>
-         </div>
-      </div>
-      </div>
+      <div>Technical Skills <br>
+        Experienced with:
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
     </div>
   </section>
 
