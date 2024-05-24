@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    nav {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      margin-left: 33%;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      display: block;
+      padding: 20px;
+      color: rgb(255, 255, 255);
+    }
+
+    .nav-link.active {
+      background-color: #65bfff;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #b4ccc8;
+
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .container {
+      text-align: left;
+      padding: 40px;
+      margin-top: 5%;
+      color: white;
+
+    }
+
+    .title {
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      transform: translate(-35%, -25%);
+
+      width: 50%;
+      animation: title-animation 2s ease-in-out forwards;
+      color: white;
+    }
+
+    @keyframes title-animation {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .title strong {
+      margin-top: -5%;
+      display: block;
+    }
+
+    .picture {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+    }
+
+    .contact-text {
+      color: white;
+      font-size: 60px;
+      text-align: center;
+      margin-top: -5%;
+    }
+    .icon-fb{
+      position: absolute;
+      top: 43.5%;
+      left: 30%;
+    }
+    .icon-ig{
+      position: absolute;
+      top: 43.5%;
+      left: 55%;
+    }
+    .flex-container {
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            color: black;
+            border-radius: 30px;
+            text-align: center;
+    }
+    .flex-box {
+      text-align: justify;
+      line-height: 2;
+      text-indent: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#section1" class="nav-link">Home</a></li>
+      <li><a href="#section2" class="nav-link">About</a></li>
+      <li><a href="#section3" class="nav-link">Education</a></li>
+      <li><a href="#section4" class="nav-link">Skills</a></li>
+      <li><a href="#section5" class="nav-link">Hobbies</a></li>
+      <li><a href="#section6" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="section1" class="section">
+    <div class="container">
+      <!--Add info about homepage-->
+      <div class="picture">
+        <img
+          src="https://cdn.discordapp.com/attachments/1242792172072468505/1243240266224111616/441908722_988715472968542_3863933445383719446_n-removebg-preview.png?ex=6650c139&is=664f6fb9&hm=9781b67536eaeb065f1b194e2d5d0d390c03c8e1c3487f7b00f21211c1c354fa&"
+          alt="" width="500">
+      </div>
+      <div class="title">
+        <h2>Hello, its me</h3>
+          <strong style="font-size: 80px;">Dominic</strong>
+      </div>
+     
+
+     
+    </div>
+  </section>
+
+  <section id="section2" class="section">
+    <div class="container">
+      <!--Add info about-->
+      <div class="flex-container">
+        <h2 style="font-size: 50px;">ABOUT</h2>
+        <div class="flex-box">
+      <p>My Name is Dominic P. Olasiman, I am 21 years of age and I in Barangay Hamorawon Calbayog City
+        and I have a saying that Simplify your life cause the simplier your life gets, the more you acknowledge 
+        and enjoy the little things.
+      </p>
+      </div>
+    </div>
+    </div>
+  </section>
+ 
+  <section id="section3" class="section">
+    <div class="container">
+      <div class="flex-container">
+      <h2 style="font-size: 50px;">EDUCATION</h2>
+      <div class="flex-box">
+      <!--Add info about Education-->
+      <p>I'm a Student at Northwest Samar State University,
+        currently enrolled in the program of Bachelor's of Science in Information Technology. <br>
+        <br>
+        I am an elementary Graduate from Calbayog East Central School and
+        also a product of Calbayog City National HighSchool which was the HighSchool
+        that I graduated from.
+      </p>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="section4" class="section">
+    <div class="container">
+      <!--Add info about Skills-->
+      <div class="flex-container">
+      <h2 style="font-size: 35px;">SKILLS</h2>
+      <p>I'm still on the process of honing my skills to get better everyday.</p>
+      <div>
+      <div style="text-align: left;"><b>Technical Skills</b> <br>
+      </div>
+          Experienced with:
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+      </div>
+      <div style="text-align: left;"><b> Soft Skills</b>
+        </div>
+          <li>Good communication Skills</li>
+          <li>Ability to work in a team</li>
+          <li>Quick Learner</li>
+          <li>Resourceful</li>
+         </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section5" class="section">
+    <div class="container">
+      <!--Add info about Hobbies-->
+      <div class="flex-container">
+      <h2>HOBBIES</h2>
+      <p>I don't really have that much hobbies but I like playing sports and I love to beatbox.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section6" class="section">
+    <div class="container">
+      <!--Add info about Contact-->
+      <div class="contact-text">
+        <h1>CONTACT ME</h1>
+      </div>
+      <div class="icon-fb">
+      <a href="https://www.facebook.com/dominic.olasiman.3/about" target="_blank">  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt="" width="200"></a>
+      </div>
+      <div class="icon-ig">
+       <a href="https://www.instagram.com/create_blad/" target="_blank"> <img src="https://static-00.iconduck.com/assets.00/instagram-icon-2048x2048-q6fj9aru.png" alt="" width="200"></a>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll(".section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      function changeNav() {
+        let fromTop = window.scrollY;
+
+        sections.forEach((section, index) => {
+          if (
+            section.offsetTop - 10 <= fromTop &&
+            section.offsetTop + section.offsetHeight - 10 > fromTop
+          ) {
+            navLinks.forEach((navLink) => {
+              navLink.classList.remove("active");
+            });
+
+            navLinks[index].classList.add("active");
+            section.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", changeNav);
+
+      // Trigger the initial check on page load
+      changeNav();
+
+      // Smooth scroll on anchor link click
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
